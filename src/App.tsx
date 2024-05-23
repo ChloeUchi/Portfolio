@@ -6,10 +6,8 @@ import Home from "@components/Home";
 import LocomotiveScroll from 'locomotive-scroll';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaArrowLeft } from "react-icons/fa6";
-import catLogo from '@assets/cat.png'
-// import { FaGithubSquare } from "react-icons/fa";
-// import { FaInstagram } from "react-icons/fa";
-// import { FaGithub } from "react-icons/fa";
+import universe from '@assets/universe.png'
+import facebook from '@assets/facebook.webp'
 import instagram from '@assets/instagram.png'
 import github from '@assets/github copy.png'
 
@@ -76,12 +74,12 @@ const App: React.FC = () => {
 
 
   return (
-    <div data-scroll-container ref={containerRef} className='h-[110em] bg-[#25274a]'>
+    <div data-scroll-container ref={containerRef} className='h-[110em] bg-[#e7e7e7]'>
       <div data-scroll-section>
-        <nav id="navbar" className='opacity-100 z-50 text-[#fff] font-serif '>
-          <div className="nav-content flex justify-between  items-center h-[4.5em] font-extrabold lg:text-[1.5em] md:text-[1.2em] text-[1em] px-20 bg-[#25274a] font-sans">
+        <nav id="navbar" className='opacity-100 z-50 text-[#25274a] font-serif '>
+          <div className="nav-content flex justify-between  items-center h-[3.5em] font-extrabold lg:text-[1.5em] md:text-[1.2em] text-[1em] px-20 bg-[#e7e7e7] font-darumadrop">
             <div>
-              <a onClick={() => scrollTo("Home")} className="cursor-pointer"><img src={catLogo} alt="Logo" className='w-[2em] h-auto' /></a>
+              <a onClick={() => scrollTo("Home")} className="cursor-pointer"><img src={universe} alt="Logo" className='w-[2em] h-auto' /></a>
             </div>
             {isSmallScreen ? (
               <div className="relative">
@@ -109,16 +107,16 @@ const App: React.FC = () => {
 
                     <a
                       onClick={() => scrollTo("Work")}
-                      className={`cursor-pointer hover:text-[#75A47F] ${activeSection === 'Work' ? 'text-[#fff]' : ''}`}
+                      className={`cursor-pointer hover:text-[#9da2de] ${activeSection === 'Work' ? 'text-[#fff]' : ''}`}
                     >work</a>
                     <a
                       onClick={() => scrollTo("About")}
-                      className={`cursor-pointer hover:text-[#75A47F] ${activeSection === 'About' ? 'text-[#fff]' : ''}`}
+                      className={`cursor-pointer hover:text-[#9da2de] ${activeSection === 'About' ? 'text-[#fff]' : ''}`}
                     >about</a>
-                    {/* <a
+                    <a
                       onClick={() => scrollTo("Contact")}
-                      className={`cursor-pointer hover:text-[#75A47F] ${activeSection === 'Contact' ? 'text-[#fff]' : ''}`}
-                    >Contact</a> */}
+                      className={`cursor-pointer hover:text-[#9da2de] ${activeSection === 'Contact' ? 'text-[#fff]' : ''}`}
+                    >Contact</a>
 
 
                   </div>
@@ -134,23 +132,26 @@ const App: React.FC = () => {
 
                 <a
                   onClick={() => scrollTo("Work")}
-                  className={`cursor-pointer flex items-center gap-1 hover:text-[#75A47F] ${activeSection === 'Work' ? 'text-[#fff]' : ''}`}
+                  className={`cursor-pointer flex items-center gap-1 hover:text-[#9da2de] hover:underline hover:underline-offset-4 ${activeSection === 'Work' ? 'text-[#fff]' : ''}`}
                 >
                   {/* <MdAssignmentInd/> */}
                   work</a>
                 <a
                   onClick={() => scrollTo("About")}
-                  className={`cursor-pointer flex items-center gap-1 hover:text-[#75A47F] ${activeSection === 'About' ? 'text-[#fff]' : ''}`}
+                  className={`cursor-pointer flex items-center gap-1 hover:text-[#9da2de] hover:underline hover:underline-offset-4 ${activeSection === 'About' ? 'text-[#fff]' : ''}`}
                 >
                   {/* <FaInfo/> */}
                   about</a>
-                {/* <a
+                <a
                   onClick={() => scrollTo("Contact")}
-                  className={`cursor-pointer flex items-center gap-1 hover:text-[#75A47F] ${activeSection === 'Contact' ? 'text-[#fff]' : ''}`}
+                  className={`cursor-pointer flex items-center gap-1 hover:text-[#9da2de] hover:underline hover:underline-offset-4 ${activeSection === 'Contact' ? 'text-[#fff]' : ''}`}
                 >
-                  Contact</a> */}
-                <a href="#" ><img src={instagram} alt="ig logos" className='w-7 h-auto' /></a>
-                <a href="#"><img src={github} alt="ig logos" className='w-7 h-auto' /></a>
+                  Contact</a>
+                <div className='flex gap-7 items-center'>
+                  <a href="https://www.instagram.com/chloe.jmy/" target="_blank" ><img src={instagram} alt="ig logo" className='w-7 h-auto' /></a>
+                  <a href="https://github.com/ChloeUchi" target="_blank"><img src={github} alt="github logo" className='w-7 h-auto' /></a>
+                  <a href="https://www.facebook.com/chonthichahinthao/" target="_blank"><img src={facebook} alt="facebook logo" className='w-12 h-auto' /></a>
+                </div>
               </div>
             )}
           </div>
