@@ -5,6 +5,9 @@ import flexWorkshop from '@assets/flexWorkshop.png'
 import flexWorkshop2 from '@assets/flexWorkshop2.png'
 import pokemonWorkshop from '@assets/pokemonWorkshop.png'
 import tailwindWorkshop from '@assets/tailwindWorkshop.png'
+import assignment4 from '@assets/redux.png'
+import routerworkshop from '@assets/react-router.png'
+import assignment3 from '@assets/assignment3.png'
 
 import { FaGithub } from "react-icons/fa";
 import './Style.Work.css'
@@ -20,8 +23,11 @@ const Work = () => {
         { title: "Digimon Card", description: "Workshop API using React TypeScript to fetch API", imageUrl: digimon },
         { title: "Flex Layout Workshop", description: "Workshop of using flex layout", imageUrl: flexWorkshop },
         { title: "Flex Layout Workshop", description: "Workshop of using flex layout", imageUrl: flexWorkshop2 },
-        { title: "Pokemon API", description: "Workshop API using axios to fetch data from pokemon api v2", imageUrl: pokemonWorkshop },
+        { title: "Pokemon API v2", description: "Workshop API using axios to fetch data from pokemon api v2", imageUrl: pokemonWorkshop },
         { title: "Tailwind workshop", description: "Workshop using tailwind css", imageUrl: tailwindWorkshop },
+        { title: "Quiz Web App", description: "Create web application with Ant design framework and Tailwind css dark mode", imageUrl: assignment4 },
+        { title: "Daily news website", description: "Create dayly news website use react router dom", imageUrl: routerworkshop },
+        { title: "Pokemon API v1", description: "Workshop using tailwind css", imageUrl: assignment3 },
     ];
     const handleResize = () => {
         const width = window.innerWidth;
