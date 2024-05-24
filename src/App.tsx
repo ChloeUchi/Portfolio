@@ -82,7 +82,7 @@ const App: React.FC = () => {
               <a onClick={() => scrollTo("Home")} className="cursor-pointer"><img src={universe} alt="Logo" className='w-[2em] h-auto' /></a>
             </div>
             {isSmallScreen ? (
-              <div className="relative">
+              <div className="relative text-[#fff]">
                 <button
                   className="hamburger p-2 focus:outline-none"
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
