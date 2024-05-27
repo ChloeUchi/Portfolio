@@ -77,7 +77,7 @@ const App: React.FC = () => {
     <div data-scroll-container ref={containerRef} className='h-[110em] bg-[#e7e7e7]'>
       <div data-scroll-section>
         <nav id="navbar" className='opacity-100 z-50 text-[#25274a] font-serif '>
-          <div className="nav-content flex justify-between  items-center h-[3.5em] font-extrabold lg:text-[1.5em] md:text-[1.2em] text-[1em] px-20 bg-[#e7e7e7] font-darumadrop">
+          <div className="nav-content flex justify-between  items-center h-[3.5em] font-extrabold lg:text-[1.5em] md:text-[1.2em] text-[1em] lg:px-20 md:px-16 px-7 bg-[#e7e7e7] font-darumadrop">
             <div>
               <a onClick={() => scrollTo("Home")} className="cursor-pointer"><img src={universe} alt="Logo" className='w-[2em] h-auto' /></a>
             </div>

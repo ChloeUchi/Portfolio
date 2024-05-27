@@ -60,7 +60,7 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div ref={ref} className=" lg:h-screen md:h-screen h-[600px] overflow-hidden relative grid place-items-center"
+    <div ref={ref} className="bg-[#5e628f] lg:h-screen md:h-screen h-[600px] overflow-hidden relative grid place-items-center"
     //  style={{ clipPath }}
     >
       <div className="content"
@@ -76,7 +76,7 @@ const Home: React.FC = () => {
               delay: 0.8,
               ease: [0, 0.71, 0.2, 1.01]
             }}
-            className="lg:text-[7em] md:text-[4.8em] text-[2.3em] font-extrabold drop-shadow-custom font-titan bg-gradient-to-r from-[#cbd0f7] via-[#f6b1f7] to-[#fac3c6] text-transparent bg-clip-text"
+            className="lg:text-[7em] md:text-[4.8em] text-[2em] font-extrabold drop-shadow-custom font-titan bg-gradient-to-r from-[#cbd0f7] via-[#f6b1f7] to-[#fac3c6] text-transparent bg-clip-text"
           >
             Hi, <br /> I'm CHLOE
           </motion.div>

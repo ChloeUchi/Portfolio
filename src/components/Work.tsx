@@ -46,11 +46,11 @@ const Work = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
     return (
-        <div className="curved bg-[#e7e7e7]"
+        <div className="curved bg-[#5e628f]"
 
         >
             <br />
-            <h1 className='lg:text-[3em] md:text-[2em] text-[1em] font-extrabold font-darumadrop text-[#2b2e5b] text-center drop-shadow-xl'>My Works</h1>
+            <h1 className='lg:text-[3em] md:text-[2em] text-[1em] font-extrabold font-darumadrop text-[#e3e5ff] text-center drop-shadow-xl'>My Works</h1>
             <br /><br />
             <div className="flex flex-col items-center">
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 justify-around'>
@@ -72,6 +72,7 @@ const Work = () => {
                         </motion.div>
                     ))}
                 </div>
+                <br />
                 {!isLargeScreen && visibleCards < cards.length && (
                     <button onClick={loadMoreCards} className="mt-4 px-4 py-2 font-bold bg-[#373960] text-white rounded-full hover:bg-[#33344c] active:bg-[#8d8fb3] active:text-[#373960] font-sans">
                         Load More

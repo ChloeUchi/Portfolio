@@ -36,6 +36,7 @@ export default {
                 'customimg': '-8px -8px 0px #DDDDDD',
                 'customimg2': '8px 8px 0px #DDDDDD',
                 'custom2': '1px 4px 3px #DDDDDD',
+                'custom3': '1px 3px 2px #6e723a',
 
             },
             backgroundImage: {

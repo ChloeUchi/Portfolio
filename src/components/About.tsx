@@ -61,7 +61,7 @@ const About = () => {
     }, []);
 
     return (
-        <div className='parallax-container text-white bg-custom-gradient h-full'
+        <div className='parallax-container text-white bg-custom-gradient h-full bg-[#e7e7e7]'
             style={{
                 clipPath: 'polygon(100% 100%, 0% 100%, 0% 13.7%, 2% 13.19%, 4% 12.37%, 6% 11.45%, 8% 10.67%, 10% 10.21%, 12% 10.18%, 14% 10.6%, 16% 11.35%, 18% 12.28%, 20% 13.11%, 22% 13.66%, 24% 13.8%, 26% 13.5%, 28% 12.8%, 30% 11.91%, 32% 11.03%, 34% 10.39%, 36% 10.13%, 38% 10.33%, 40% 10.94%, 42% 11.81%, 44% 12.71%, 46% 13.43%, 48% 13.8%, 50% 13.7%, 52% 13.19%, 54% 12.37%, 56% 11.45%, 58% 10.67%, 60% 10.21%, 62% 10.18%, 64% 10.6%, 66% 11.35%, 68% 12.28%, 70% 13.11%, 72% 13.66%, 74% 13.8%, 76% 13.5%, 78% 12.8%, 80% 11.91%, 82% 11.03%, 84% 10.39%, 86% 10.13%, 88% 10.33%, 90% 10.94%, 92% 11.81%, 94% 12.71%, 96% 13.43%, 98% 13.8%, 100% 13.7%)',
             }}>
@@ -144,7 +144,7 @@ const About = () => {
                                     factorX={0.5}
                                     factorY={0.5}
                                     style={{ filter: "invert(1)" }} >
-                                    <RiJavascriptFill className='lg:h-[105px] md:h-[65px] h-[30px] w-auto fill-black' />
+                                    <RiJavascriptFill className='lg:h-[105px] md:h-[65px] h-[30px] w-auto fill-[#888b62]' />
                                 </MouseParallaxChild>
                                 <MouseParallaxChild className="flex items-center justify-center w-auto h-[100%]"
                                     factorX={0.7}
@@ -158,29 +158,29 @@ const About = () => {
                                     style={{ filter: "invert(1)" }} >
                                     <img className='lg:h-[105px] md:h-[65px] h-[30px] w-auto' src={svg4} alt="" />
                                 </MouseParallaxChild>
-                                <MouseParallaxChild className="flex items-center justify-center w-auto h-[100%]"
+                                <MouseParallaxChild className="flex items-center justify-center w-auto h-[100%] "
                                     factorX={0.9}
                                     factorY={0.5}
                                     style={{ filter: "invert(1)" }} >
-                                    <img src={tailwindIcon} alt="" className='lg:h-[105px] md:h-[65px] h-[30px] fill-black w-auto ' />
+                                    <img src={tailwindIcon} alt="" className='lg:h-[105px] md:h-[65px] h-[30px]  w-auto ' />
                                 </MouseParallaxChild>
                                 <MouseParallaxChild className="flex items-center justify-center w-auto h-[100%]"
                                     factorX={0.7}
                                     factorY={0.5}
                                     style={{ filter: "invert(1)" }} >
-                                    <SiAntdesign className='lg:h-[105px] md:h-[65px] h-[30px] w-auto fill-black' />
+                                    <SiAntdesign className='lg:h-[105px] md:h-[65px] h-[30px] w-auto fill-[#888b62]' />
                                 </MouseParallaxChild>
                                 <MouseParallaxChild className="flex items-center justify-center w-auto h-[100%]"
                                     factorX={0.5}
                                     factorY={0.5}
                                     style={{ filter: "invert(1)" }} >
-                                    <FaHtml5 className='lg:h-[105px] md:h-[65px] h-[30px] w-auto fill-black' />
+                                    <FaHtml5 className='lg:h-[105px] md:h-[65px] h-[30px] w-auto fill-[#888b62]' />
                                 </MouseParallaxChild>
                                 <MouseParallaxChild className="flex items-center justify-center w-auto h-[100%]"
                                     factorX={0.3}
                                     factorY={0.5}
                                     style={{ filter: "invert(1)" }} >
-                                    <FaCss3Alt className='lg:h-[105px] md:h-[65px] h-[30px] w-auto fill-black' />
+                                    <FaCss3Alt className='lg:h-[105px] md:h-[65px] h-[30px] w-auto fill-[#888b62]' />
                                 </MouseParallaxChild>
                             </MouseParallaxContainer>
                         </div>
