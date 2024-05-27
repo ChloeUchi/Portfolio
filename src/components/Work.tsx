@@ -52,7 +52,7 @@ const Work = () => {
             <br />
             <h1 className='lg:text-[3em] md:text-[2em] text-[1em] font-extrabold font-darumadrop text-[#e3e5ff] text-center drop-shadow-xl'>My Works</h1>
             <br /><br />
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center bg-[#5e628f]">
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 justify-around'>
                     {cards.slice(0, visibleCards).map((card, index) => (
                         <motion.div

@@ -88,23 +88,23 @@ const About = () => {
                     className="parallax-item2 item-2 flex justify-around relative"
                     style={{ transform: `translate(${offsetX * 1}px, ${offsetY * 1}px)` }}
                 >
-                    <img src={sun} alt="img" className="drop-shadow-customimg lg:w-[25em] md:w-[20em] w-[10em] absolute lg:top-[1.5rem] md:top-[1rem] top-[0rem] animated-image" />
+                    <img src={sun} alt="img" className="drop-shadow-customimg lg:w-[25em] md:w-[20em] w-[10em] absolute lg:top-[1.5rem] md:top-[1rem] -top-[1rem] animated-image" />
                 </div>
                 <div
-                    className="parallax-item item-1 flex relative lg:top-20 md:top-36 top-36 gap-[26rem] justify-center px-16"
+                    className="parallax-item item-1 flex relative lg:top-20 md:top-36 top-10 gap-[26rem] justify-center px-16"
                     style={{ transform: `translate(${offsetX * 1}px, ${offsetY * 1}px)` }}
                 >
-                    <img src={stingray} alt="Rocket" className="drop-shadow-customimg lg:w-[17em] md:w-[15em] w-[11em] h-auto relative lg:-left-9 md:-left-1 left-[120px] hover:-rotate-45 hover:duration-300 hover:drop-shadow-customimg2 animated-image" />
-                    <img src={stingray} alt="Rocket" className="drop-shadow-customimg lg:w-[17em] md:w-[15em] w-[11em] h-auto relative lg:-right-9 md:-right-1 right-[120px] hover:rotate-12 hover:duration-300 hover:drop-shadow-customimg2 animated-image" />
+                    <img src={stingray} alt="Rocket" className="drop-shadow-customimg lg:w-[17em] md:w-[15em] w-[7em] lg:h-auto md:h-auto h-[4em] relative lg:-left-9 md:-left-1 left-[120px] hover:-rotate-45 hover:duration-300 hover:drop-shadow-customimg2 animated-image" />
+                    <img src={stingray} alt="Rocket" className="drop-shadow-customimg lg:w-[17em] md:w-[15em] w-[7em] lg:h-auto md:h-auto h-[4em] relative lg:-right-9 md:-right-1 right-[120px] hover:rotate-12 hover:duration-300 hover:drop-shadow-customimg2 animated-image" />
                 </div>
 
-                <div className="info-container lg:w-[80%] md:w-[80%] h-auto m-auto px-[5em] text-[#e8e8e8] relative lg:top-5 md:top-10 top-5 w-[100%]">
+                <div className="info-container lg:w-[80%] md:w-[80%] h-auto m-auto px-[5em] text-[#e8e8e8] relative lg:top-5 md:top-10 top-12 w-[100%]">
                     <div className='flex flex-col items-center justify-center'>
                         {/* <img src={karina} alt="Rocket" className="drop-shadow-customimg w-[25em] h-auto relative -left-[16rem]" /> */}
-                        <h1 className='lg:text-[4.5em] md:text-[3em] text-[1.2em] font-extrabold font-homemade'>HEY THERE!!!!</h1><br />
+                        <h1 className='lg:text-[4.5em] md:text-[3em] text-[1.1em] font-extrabold font-homemade'>HEY THERE!!!!</h1><br />
                     </div>
                 </div>
-                <p className='lg:text-[1.3em] md:text-[1.1em] text-[0.5em] font-extrabold lg:px-16 md:px-24 px-10 font-kalam relative lg:top-20 md:top-24 top-14 lg:w-[80%] m-auto'>As a computer science student, I'm actively pursuing a front-end developer internship. I have a foundational understanding of HTML and am currently advancing my skills in ReactJS, complemented by experience with Tailwind CSS. Eager to contribute my growing proficiency to dynamic web development projects.</p>
+                <p className='lg:text-[1.3em] md:text-[1.1em] text-[0.7em] font-extrabold lg:px-16 md:px-24 px-10 font-kalam relative lg:top-20 md:top-24 top-14 lg:w-[80%] m-auto'>As a computer science student, I'm actively pursuing a front-end developer internship. I have a foundational understanding of HTML and am currently advancing my skills in ReactJS, complemented by experience with Tailwind CSS. Eager to contribute my growing proficiency to dynamic web development projects.</p>
 
                 <div
                     className="parallax-item2 item-2 flex justify-around relative"
@@ -120,7 +120,7 @@ const About = () => {
                 </div>
                 <div className='justify-center flex flex-col gap-7 lg:mt-20 mt-40 md:mt-32'>
                     {/* <h1 className='font-darumadrop lg:text-[3em] md:text-[2em] text-[1em]'>SKILLS</h1> */}
-                    <div className="h-[100%] w-[100%] text-[#fff] " >
+                    <div className="h-[100%] w-[100%] text-[#eeeeee] " >
                         <h1 className='font-darumadrop lg:text-[3.5em] md:text-[2.5em] text-[1.5em] lg:mt-20 md:mt-12 -mt-14'>SKILLS</h1>
 
                         <div className="h-[100%] flex flex-col justify-center lg:mt-20 md:mt-12 mt-5" >

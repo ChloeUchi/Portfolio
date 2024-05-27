@@ -33,8 +33,10 @@ export default {
             dropShadow: {
                 'custom': '1px 4px 3px rgba(100, 102, 292, 0.5)',
                 'customm': '1px 4px 3px rgba(200, 202, 292, 0.5)',
-                'customimg': '-8px -8px 0px #DDDDDD',
-                'customimg2': '8px 8px 0px #DDDDDD',
+                'customimg': '-6px -6px 0px #DDDDDD',
+                'customimg2': '6px 6px 0px #DDDDDD',
+                'customimgg': '-8px -8px 0px #DDDDDD',
+                'customimg22': '8px 8px 0px #DDDDDD',
                 'custom2': '1px 4px 3px #DDDDDD',
                 'custom3': '1px 3px 2px #6e723a',
 
