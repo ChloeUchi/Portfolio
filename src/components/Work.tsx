@@ -26,7 +26,7 @@ const Work = () => {
         { title: "Pokemon API v2", description: "Workshop API using axios to fetch data from pokemon api v2", imageUrl: pokemonWorkshop },
         { title: "Tailwind workshop", description: "Workshop using tailwind css", imageUrl: tailwindWorkshop },
         { title: "Quiz Web App", description: "Create web application with Ant design framework and Tailwind css dark mode", imageUrl: assignment4 },
-        { title: "Daily news website", description: "Create dayly news website use react router dom", imageUrl: routerworkshop },
+        { title: "Daily news website", description: "Create daily news website use react router dom", imageUrl: routerworkshop },
         { title: "Pokemon API v1", description: "Workshop using tailwind css", imageUrl: assignment3 },
     ];
     const handleResize = () => {
@@ -47,9 +47,6 @@ const Work = () => {
     }, []);
     return (
         <div className="curved bg-[#e7e7e7]"
-        // style={{
-        //     clipPath: 'polygon(100% 100%, 0% 100%, 0.00% 79.70%, 2.00% 78.29%, 4.00% 76.07%, 6.00% 73.59%, 8.00% 71.45%, 10.00% 70.19%, 12.00% 70.12%, 14.00% 71.26%, 16.00% 73.32%, 18.00% 75.80%, 20.00% 78.08%, 22.00% 79.60%, 24.00% 79.98%, 26.00% 79.13%, 28.00% 77.25%, 30.00% 74.83%, 32.00% 72.44%, 34.00% 70.69%, 36.00% 70.00%, 38.00% 70.55%, 40.00% 72.20%, 42.00% 74.55%, 44.00% 77.00%, 46.00% 78.96%, 48.00% 79.94%, 50.00% 79.70%, 52.00% 78.29%, 54.00% 76.07%, 56.00% 73.59%, 58.00% 71.45%, 60.00% 70.19%, 62.00% 70.12%, 64.00% 71.26%, 66.00% 73.32%, 68.00% 75.80%, 70.00% 78.08%, 72.00% 79.60%, 74.00% 79.98%, 76.00% 79.13%, 78.00% 77.25%, 80.00% 74.83%, 82.00% 72.44%, 84.00% 70.69%, 86.00% 70.00%, 88.00% 70.55%, 90.00% 72.20%, 92.00% 74.55%, 94.00% 77.00%, 96.00% 78.96%, 98.00% 79.94%, 100.00% 79.70%)'
-        // }}
 
         >
             <br />

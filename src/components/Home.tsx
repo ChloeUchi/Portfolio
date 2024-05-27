@@ -48,13 +48,25 @@ const Home: React.FC = () => {
       yoyo: true
     });
   }, []);
+  useEffect(() => {
+    gsap.to(".animated-rocket", {
+      y: 20,
+      // x: 10,
+      duration: 2,
+      ease: "power1.inOut",
+      repeat: -1,
+      yoyo: true
+    });
+  }, []);
+
   return (
     <div ref={ref} className=" lg:h-screen md:h-screen h-[600px] overflow-hidden relative grid place-items-center"
     //  style={{ clipPath }}
     >
       <div className="content"
-        style={{ transform: `translate(${offsetX * 1}px, ${offsetY * 1}px)` }}>
-        <div className=" relative px-16 pb-10 w-fit m-auto">
+        style={{ transform: `translate(${offsetX * 1}px, ${offsetY * 1}px)` }}
+      >
+        <div className="relative px-16 pb-10 w-fit m-auto">
 
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
@@ -82,18 +94,12 @@ const Home: React.FC = () => {
             Front-End Developer Portfolio
           </motion.div>
         </div>
-        {/* <div
-          className="parallax-item item-1"
-          style={{ transform: `translate(${offsetX * 1}px, ${offsetY * 1}px)` }}
-        >
-          <img src={rocket} alt="Rocket" className="drop-shadow-customimg fixed" />
-        </div> */}
       </div>
       <motion.div
         style={{ y: textY }}
         className="relative z-10"
       >
-        <img src={rocket} alt="Rocket" className="drop-shadow-customimg lg:w-[33%] h-auto md:w-[66%] w-[75%] m-auto relative lg:bottom-32 bottom-28 md:bottom-80"
+        <img src={rocket} alt="Rocket" className="drop-shadow-customimg lg:w-[33%] h-auto md:w-[66%] w-[75%] m-auto relative lg:bottom-32 bottom-28 md:bottom-80 animated-rocket"
           style={{ transform: `translate(${offsetX * 1}px, ${offsetY * 1}px)` }} />
       </motion.div>
 

@@ -87,7 +87,7 @@ const App: React.FC = () => {
                   className="hamburger p-2 focus:outline-none"
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
-                  <GiHamburgerMenu />
+                  <GiHamburgerMenu className='text-[#25274a]' />
                 </button>
                 <div
                   className={`fixed top-0 right-0 h-full w-[45%] bg-[#2b2e5b] shadow-xl z-50 transform transition-transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
@@ -107,15 +107,15 @@ const App: React.FC = () => {
 
                     <a
                       onClick={() => scrollTo("Work")}
-                      className={`cursor-pointer hover:text-[#9da2de] ${activeSection === 'Work' ? 'text-[#fff]' : ''}`}
+                      className={`cursor-pointer hover:text-[#9da2de] active:text-[#bcc1f1] ${activeSection === 'Work' ? 'text-[#fff]' : ''}`}
                     >work</a>
                     <a
                       onClick={() => scrollTo("About")}
-                      className={`cursor-pointer hover:text-[#9da2de] ${activeSection === 'About' ? 'text-[#fff]' : ''}`}
+                      className={`cursor-pointer hover:text-[#9da2de] active:text-[#bcc1f1] ${activeSection === 'About' ? 'text-[#fff]' : ''}`}
                     >about</a>
                     <a
                       onClick={() => scrollTo("Contact")}
-                      className={`cursor-pointer hover:text-[#9da2de] ${activeSection === 'Contact' ? 'text-[#fff]' : ''}`}
+                      className={`cursor-pointer hover:text-[#9da2de] active:text-[#bcc1f1] ${activeSection === 'Contact' ? 'text-[#fff]' : ''}`}
                     >Contact</a>
 
 
@@ -123,7 +123,7 @@ const App: React.FC = () => {
                 </div>
               </div>
             ) : (
-              <div className="links flex lg:gap-20 md:gap-10 gap-10 items-center">
+              <div className="links flex lg:gap-20 md:gap-10 gap-10 items-center select-none">
                 {/* <a
                   onClick={() => scrollTo("Home")}
                   className={`cursor-pointer flex items-center gap-1 hover:text-[#75A47F] ${activeSection === 'Home' ? 'text-[#fff]' : ''}`}
@@ -132,19 +132,19 @@ const App: React.FC = () => {
 
                 <a
                   onClick={() => scrollTo("Work")}
-                  className={`cursor-pointer flex items-center gap-1 hover:text-[#9da2de] hover:underline hover:underline-offset-4 ${activeSection === 'Work' ? 'text-[#fff]' : ''}`}
+                  className={`cursor-pointer flex items-center gap-1 hover:text-[#9da2de] hover:underline hover:underline-offset-4 active:text-[#bcc1f1] ${activeSection === 'Work' ? 'text-[#fff]' : ''}`}
                 >
                   {/* <MdAssignmentInd/> */}
                   work</a>
                 <a
                   onClick={() => scrollTo("About")}
-                  className={`cursor-pointer flex items-center gap-1 hover:text-[#9da2de] hover:underline hover:underline-offset-4 ${activeSection === 'About' ? 'text-[#fff]' : ''}`}
+                  className={`cursor-pointer flex items-center gap-1 hover:text-[#9da2de] hover:underline hover:underline-offset-4 active:text-[#bcc1f1] ${activeSection === 'About' ? 'text-[#fff]' : ''}`}
                 >
                   {/* <FaInfo/> */}
                   about</a>
                 <a
                   onClick={() => scrollTo("Contact")}
-                  className={`cursor-pointer flex items-center gap-1 hover:text-[#9da2de] hover:underline hover:underline-offset-4 ${activeSection === 'Contact' ? 'text-[#fff]' : ''}`}
+                  className={`cursor-pointer flex items-center gap-1 hover:text-[#9da2de] hover:underline hover:underline-offset-4 active:text-[#bcc1f1] ${activeSection === 'Contact' ? 'text-[#fff]' : ''}`}
                 >
                   Contact</a>
                 <div className='flex gap-7 items-center'>
