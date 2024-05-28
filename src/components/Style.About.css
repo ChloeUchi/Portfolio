@@ -1,3 +1,7 @@
+body {
+  background-color: #5e628f;
+}
+
 .text-white {
     color: white;
 }
@@ -66,3 +70,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 100px;
+  overflow-x: hidden;
+  /* z-index: 2; */
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 20s linear infinite;
+  z-index: 2;
+
+}
+
+@keyframes marquee {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-50%);
+  }
+}

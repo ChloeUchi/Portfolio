@@ -26,14 +26,13 @@
   src: local('titan'), url('./assets/TitanOne-Regular.ttf') format('truetype');
 }
 .about-container {
-  filter: url(#grainy-filter); /* ใช้เฟือน grainy-filter ที่ได้สร้างไว้ */
+  filter: url(#grainy-filter);
 }
 body {
   margin-bottom: 0;
   background-color: #5e628f;
 }
 
-/* หรือหากคุณต้องการลบพื้นที่โล่งด้านล่างเฉพาะส่วนหนึ่ง เช่น คอมโพเนน "Contact" */
 .contact-container {
   margin-bottom: 0;
 }

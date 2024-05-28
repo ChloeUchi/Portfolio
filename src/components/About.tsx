@@ -61,10 +61,11 @@ const About = () => {
     }, []);
 
     return (
-        <div className='parallax-container text-white bg-custom-gradient h-full bg-[#5e628f]'
-            style={{
-                clipPath: 'polygon(100% 100%, 0% 100%, 0% 13.7%, 2% 13.19%, 4% 12.37%, 6% 11.45%, 8% 10.67%, 10% 10.21%, 12% 10.18%, 14% 10.6%, 16% 11.35%, 18% 12.28%, 20% 13.11%, 22% 13.66%, 24% 13.8%, 26% 13.5%, 28% 12.8%, 30% 11.91%, 32% 11.03%, 34% 10.39%, 36% 10.13%, 38% 10.33%, 40% 10.94%, 42% 11.81%, 44% 12.71%, 46% 13.43%, 48% 13.8%, 50% 13.7%, 52% 13.19%, 54% 12.37%, 56% 11.45%, 58% 10.67%, 60% 10.21%, 62% 10.18%, 64% 10.6%, 66% 11.35%, 68% 12.28%, 70% 13.11%, 72% 13.66%, 74% 13.8%, 76% 13.5%, 78% 12.8%, 80% 11.91%, 82% 11.03%, 84% 10.39%, 86% 10.13%, 88% 10.33%, 90% 10.94%, 92% 11.81%, 94% 12.71%, 96% 13.43%, 98% 13.8%, 100% 13.7%)',
-            }}>
+        <div className='parallax-container text-white bg-custom-gradient h-full bg-[#5e628f] border-[#e7e7e7] border-t-[15px] border-l-[15px] border-r-[15px]'
+        // style={{
+        //     clipPath: 'polygon(100% 100%, 0% 100%, 0% 13.7%, 2% 13.19%, 4% 12.37%, 6% 11.45%, 8% 10.67%, 10% 10.21%, 12% 10.18%, 14% 10.6%, 16% 11.35%, 18% 12.28%, 20% 13.11%, 22% 13.66%, 24% 13.8%, 26% 13.5%, 28% 12.8%, 30% 11.91%, 32% 11.03%, 34% 10.39%, 36% 10.13%, 38% 10.33%, 40% 10.94%, 42% 11.81%, 44% 12.71%, 46% 13.43%, 48% 13.8%, 50% 13.7%, 52% 13.19%, 54% 12.37%, 56% 11.45%, 58% 10.67%, 60% 10.21%, 62% 10.18%, 64% 10.6%, 66% 11.35%, 68% 12.28%, 70% 13.11%, 72% 13.66%, 74% 13.8%, 76% 13.5%, 78% 12.8%, 80% 11.91%, 82% 11.03%, 84% 10.39%, 86% 10.13%, 88% 10.33%, 90% 10.94%, 92% 11.81%, 94% 12.71%, 96% 13.43%, 98% 13.8%, 100% 13.7%)',
+        // }}
+        >
             <svg className='background-svg' viewBox='0 0 400 1000' xmlns='http://www.w3.org/2000/svg'>
                 <filter id='noiseFilter'>
                     <feTurbulence
@@ -76,6 +77,11 @@ const About = () => {
                 </filter>
                 <rect width='100%' height='100%' filter='url(#noiseFilter)' />
             </svg>
+            {/* <div className="marquee  bg-[#e7e7e7] flex justify-center items-center lg:text-[2em] md:text-[1.8em] text-[1.6em]  mb-[1em]">
+                <div className="track ">
+                    <div className="content font-darumadrop font-extrabold text-[1.5em] bg-gradient-to-r from-[#f6b2b8] via-[#f1a8f2] to-[#97a3f8] text-transparent bg-clip-text">&emsp;HELLO!&emsp;HI!&emsp;I&emsp;AM&emsp;CHLOE&emsp;HELLO!&emsp;HI!&emsp;I&emsp;AM&emsp;CHLOE&emsp;HELLO!&emsp;HI!&emsp;I&emsp;AM&emsp;CHLOE&emsp;HELLO!&emsp;HI!&emsp;I&emsp;AM&emsp;CHLOE&emsp;HELLO!&emsp;HI!&emsp;I&emsp;AM&emsp;CHLOE&emsp;HELLO!&emsp;HI!&emsp;I&emsp;AM&emsp;CHLOE&emsp;HELLO!&emsp;HI!&emsp;I&emsp;AM&emsp;CHLOE&emsp;HELLO!&emsp;HI!&emsp;I&emsp;AM&emsp;CHLOE&emsp;</div>
+                </div>
+            </div> */}
             <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -83,15 +89,15 @@ const About = () => {
                     duration: 2,
                     delay: 1,
                     ease: [0, 0.71, 0.2, 1.01]
-                }} className="content relative mt-14">
+                }} className="content relative mt-5">
                 <div
                     className="parallax-item2 item-2 flex justify-around relative"
                     style={{ transform: `translate(${offsetX * 1}px, ${offsetY * 1}px)` }}
                 >
-                    <img src={sun} alt="img" className="drop-shadow-customimg lg:w-[25em] md:w-[20em] w-[10em] absolute lg:top-[1.5rem] md:top-[1rem] -top-[1rem] animated-image" />
+                    <img src={sun} alt="img" className="drop-shadow-customimg lg:w-[25em] md:w-[20em] w-[11em] h-auto absolute  animated-image" />
                 </div>
                 <div
-                    className="parallax-item item-1 flex relative lg:top-20 md:top-36 top-10 gap-[26rem] justify-center px-16"
+                    className="parallax-item item-1 flex relative lg:top-16 md:top-28 top-10 gap-[26rem] justify-center px-16"
                     style={{ transform: `translate(${offsetX * 1}px, ${offsetY * 1}px)` }}
                 >
                     <img src={stingray} alt="Rocket" className="drop-shadow-customimg lg:w-[17em] md:w-[15em] w-[7em] lg:h-auto md:h-auto h-[4em] relative lg:-left-9 md:-left-1 left-[120px] hover:-rotate-45 hover:duration-300 hover:drop-shadow-customimg2 animated-image" />

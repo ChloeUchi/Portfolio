@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 const Work = () => {
     const [visibleCards, setVisibleCards] = useState(4);
     const loadMoreCards = () => {
-        setVisibleCards(prevVisibleCards => prevVisibleCards + 4);
+        setVisibleCards(prevVisibleCards => prevVisibleCards + 5);
     };
     const [isLargeScreen, setIsLargeScreen] = useState(false);
     const cards = [
@@ -50,7 +50,7 @@ const Work = () => {
 
         >
             <br />
-            <h1 className='lg:text-[3em] md:text-[2em] text-[1em] font-extrabold font-darumadrop text-[#e3e5ff] text-center drop-shadow-xl'>My Works</h1>
+            <h1 className='lg:text-[4em] md:text-[3em] text-[2em] font-extrabold font-darumadrop text-[#e3e5ff] text-center drop-shadow-xl'>My Works</h1>
             <br /><br />
             <div className="flex flex-col items-center bg-[#5e628f]">
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 justify-around'>
@@ -79,6 +79,7 @@ const Work = () => {
                     </button>
                 )}
             </div>
+            <br />
         </div >
     )
 }
