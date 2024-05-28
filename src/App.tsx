@@ -71,7 +71,7 @@ const App: React.FC = () => {
     if (scrollRef.current) {
       const target = document.getElementById(id);
       if (target) {
-        scrollRef.current.scrollTo(target);
+        scrollRef.current.scrollTo(target.offsetTop);
         setIsMenuOpen(false);
       }
     }
