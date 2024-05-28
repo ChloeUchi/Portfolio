@@ -27,7 +27,7 @@ const Work = () => {
         { title: "Tailwind workshop", description: "Workshop using tailwind css", imageUrl: tailwindWorkshop },
         { title: "Quiz Web App", description: "Create web application with Ant design framework and Tailwind css dark mode", imageUrl: assignment4 },
         { title: "Daily news website", description: "Create daily news website use react router dom", imageUrl: routerworkshop },
-        { title: "Pokemon API v1", description: "Workshop using tailwind css", imageUrl: assignment3 },
+        { title: "Pokemon API v1", description: "Workshop API using redux RTK query from pokemon api v1", imageUrl: assignment3 },
     ];
     const handleResize = () => {
         const width = window.innerWidth;
@@ -59,22 +59,22 @@ const Work = () => {
                             initial={{ opacity: 0, scale: 0.5 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{
-                                duration: 2,
-                                delay: 0.8,
-                                ease: [0, 0.71, 0.2, 1.01]
+                                duration: 1.5,
+                                delay: index * 0.4,
+                                ease: "easeInOut"
                             }} key={index} className="card lg:w-[399.5px] lg:h-[230px] md:w-[350px] md:h-[200px] w-[271px] h-[154px] relative overflow-hidden rounded-lg transition-transform duration-600 hover:rotate-[-3deg]  hover:scale-105 shadow-lg"
                             style={{ backgroundImage: `url(${card.imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                             <div className="card__content">
                                 <p className="card__title lg:text-[24px] md:text-[19.2px] text-[16px] font-darumadrop uppercase">{card.title}</p>
                                 <p className="card__description lg:text-[17px] md:text-[12.7px] text-[9.8px] font-sans font-bold text-start">{card.description}</p>
-                                <div className="flex justify-between relative lg:top-14 md:top-16 top-9 lg:text-[20px] md:text-[16px] text-[12px] font-darumadrop">Open on Github <a href="https://github.com/ChloeUchi" className="w-6 h-auto"><FaGithub /></a></div>
+                                <div className="flex justify-between relative lg:top-14 md:top-16 top-9 lg:text-[20px] md:text-[16px] text-[12px] font-darumadrop">Open on Github <a href="https://github.com/ChloeUchi" target="_blank" className="w-6 h-auto"><FaGithub /></a></div>
                             </div>
                         </motion.div>
                     ))}
                 </div>
                 <br />
                 {!isLargeScreen && visibleCards < cards.length && (
-                    <button onClick={loadMoreCards} className="mt-4 px-4 py-2 font-bold bg-[#373960] text-white rounded-full hover:bg-[#33344c] active:bg-[#8d8fb3] active:text-[#373960] font-sans">
+                    <button onClick={loadMoreCards} className="load-btn">
                         Load More
                     </button>
                 )}

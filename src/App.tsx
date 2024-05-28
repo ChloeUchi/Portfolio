@@ -10,6 +10,7 @@ import universe from '@assets/universe.png'
 import facebook from '@assets/facebook.webp'
 import instagram from '@assets/instagram.png'
 import github from '@assets/github copy.png'
+import Preloader from '@components/Preloader';
 
 const App: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -17,14 +18,17 @@ const App: React.FC = () => {
   const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const [activeSection, setActiveSection] = useState<string>('Home');
-  // const navHeight = 4.5 * 16;
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false); // Set loading to false after a certain time (e.g., 3 seconds)
+    }, 2000);
+
     if (containerRef.current) {
       scrollRef.current = new LocomotiveScroll({
         el: containerRef.current,
         smooth: true,
-        // offset: [navHeight, 0],
       });
     }
 
@@ -54,6 +58,7 @@ const App: React.FC = () => {
     sections.forEach(section => observer.observe(section));
 
     return () => {
+      clearTimeout(timer); // Clear the timer if the component unmounts
       if (scrollRef.current) {
         scrollRef.current.destroy();
       }
@@ -72,11 +77,16 @@ const App: React.FC = () => {
     }
   };
 
+  if (isLoading) {
+    return <Preloader />;
+  }
+
+
 
   return (
     <div data-scroll-container ref={containerRef} className='h-[110em] bg-[#e7e7e7]'>
       <div data-scroll-section>
-        <nav id="navbar" className='opacity-100 z-50 text-[#25274a] font-serif '>
+        <nav id="navbar" className='opacity-100 z-50 text-[#25274a] font-serif'>
           <div className="nav-content flex justify-between  items-center h-[3.5em] font-extrabold lg:text-[1.5em] md:text-[1.2em] text-[1em] lg:px-20 md:px-16 px-7 bg-[#e7e7e7] font-darumadrop">
             <div>
               <a onClick={() => scrollTo("Home")} className="cursor-pointer"><img src={universe} alt="Logo" className='w-[2em] h-auto' /></a>

@@ -6,6 +6,7 @@ import fullBg from '@assets/image-full.png'
 import bottomBg from '@assets/image-bottom.png'
 import img1 from '@assets/1.png'
 import { gsap } from 'gsap';
+import { TypeAnimation } from "react-type-animation";
 
 
 const Home: React.FC = () => {
@@ -80,7 +81,7 @@ const Home: React.FC = () => {
           >
             Hi, <br /> I'm CHLOE
           </motion.div>
-          <motion.div
+          <motion.div className="lg:text-[2.2em] md:text-[1.6em] text-[0.6em] font-darumadrop text-white"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -89,9 +90,21 @@ const Home: React.FC = () => {
               ease: [0, 0.71, 0.2, 1.01]
             }}
             style={{ y: textY }}
-            className="lg:text-[2em] md:text-[1.5em] text-[1em] font-darumadrop text-white"
+
           >
-            Front-End Developer Portfolio
+            <TypeAnimation
+              sequence={[
+                'hello guy!!', // Types 'One'
+                2000, // Waits 1s
+                'Front-End Developer portfolio', // Deletes 'One' and types 'Two'
+                5000, // Waits 2s
+
+              ]}
+              wrapper="span"
+              cursor={true}
+              repeat={Infinity}
+              style={{ fontSize: '2em', display: 'inline-block' }}
+            />
           </motion.div>
         </div>
       </div>
@@ -120,18 +133,7 @@ const Home: React.FC = () => {
           backgroundSize: "cover",
         }}
       />
-      {/* <div
-        className="parallax-layer layer-1"
-        style={{
-          transform: `translate(${offsetX * 0.3}px, ${offsetY * 0.3}px)`,
-        }}
-      />
-      <div
-        className="parallax-layer layer-2"
-        style={{
-          transform: `translate(${offsetX * 0.3}px, ${offsetY * 0.3}px)`,
-        }}
-      /> */}
+
       <div
         className="parallax-item2 item-2 flex justify-around absolute top-0 md:top-2 md:-right-7 lg:right-20 lg:top-10 -right-10 rotate-45 z-30"
         style={{ transform: `translate(${offsetX * 1}px, ${offsetY * 1}px)` }}

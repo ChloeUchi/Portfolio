@@ -47,3 +47,6 @@ body {
     line-height: 1.4;
 }
 
+.load-btn {
+    @apply mt-4 px-4 py-2 font-bold bg-[#373960] text-white rounded-full hover:bg-[#33344c] active:bg-[#8d8fb3] active:text-[#373960] font-sans
+}

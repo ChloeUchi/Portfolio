@@ -7,13 +7,10 @@ import img3 from '@assets/3.png';
 import sun from '@assets/4.png';
 import { motion } from 'framer-motion';
 import { MouseParallaxChild, MouseParallaxContainer } from 'react-parallax-mouse';
-// import svg1 from '@assets/1.svg'
 import { RiJavascriptFill } from "react-icons/ri";
 import svg2 from '@assets/2.svg'
 import svg3 from '@assets/3.svg'
 import svg4 from '@assets/4.svg'
-// import svg5 from '@assets/5.svg'
-// import { RiTailwindCssFill } from "react-icons/ri";
 import tailwindIcon from '@assets/tailwind-css-svgrepo-com.svg'
 import { SiAntdesign } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
@@ -110,7 +107,7 @@ const About = () => {
                         <h1 className='lg:text-[4.5em] md:text-[3em] text-[1.1em] font-extrabold font-homemade'>HEY THERE!!!!</h1><br />
                     </div>
                 </div>
-                <p className='lg:text-[1.3em] md:text-[1.1em] text-[0.7em] font-extrabold lg:px-16 md:px-24 px-10 font-kalam relative lg:top-20 md:top-24 top-14 lg:w-[80%] m-auto'>As a computer science student, I'm actively pursuing a front-end developer internship. I have a foundational understanding of HTML and am currently advancing my skills in ReactJS, complemented by experience with Tailwind CSS. Eager to contribute my growing proficiency to dynamic web development projects.</p>
+                <p className='lg:text-[1.3em] md:text-[1.1em] text-[0.7em] font-extrabold lg:px-16 md:px-24 px-10 font-kalam relative lg:top-20 md:top-24 top-14 lg:w-[80%] m-auto'>My name is <span className='bg-gradient-to-r from-[#bc4063] via-[#b800bb] to-[#5900c5] text-transparent bg-clip-text drop-shadow-customshadow'>Chonthicha Hintao</span> or you can call me CHLOE!! <br /> as a computer science student, I'm actively pursuing a front-end developer internship. I have a foundational understanding of HTML and am currently advancing my skills in ReactJS, complemented by experience with Tailwind CSS. Eager to contribute my growing proficiency to dynamic web development projects.</p>
 
                 <div
                     className="parallax-item2 item-2 flex justify-around relative"

@@ -38,6 +38,7 @@ export default {
                 'customimgg': '-8px -8px 0px #DDDDDD',
                 'customimg22': '8px 8px 0px #DDDDDD',
                 'custom2': '1px 4px 3px #DDDDDD',
+                'customshadow': '3px 3px 2px #DDDDDD',
                 'custom3': '1px 3px 2px #6e723a',
 
             },
