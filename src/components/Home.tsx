@@ -112,7 +112,7 @@ const Home: React.FC = () => {
         style={{ y: textY }}
         className="relative z-10"
       >
-        <img src={rocket} alt="Rocket" className="drop-shadow-customimg lg:w-[33%] h-auto md:w-[66%] w-[75%] m-auto relative lg:bottom-32 bottom-28 md:bottom-80 animated-rocket"
+        <img src={rocket} alt="Rocket" className="drop-shadow-customimg lg:w-[33%] h-auto md:w-[66%] w-[75%] m-auto relative lg:bottom-32 bottom-28 md:bottom-80 animated-rocket z-30"
           style={{ transform: `translate(${offsetX * 1}px, ${offsetY * 1}px)` }} />
       </motion.div>
 
