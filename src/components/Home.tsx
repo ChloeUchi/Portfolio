@@ -94,7 +94,7 @@ const Home: React.FC = () => {
           >
             <TypeAnimation
               sequence={[
-                'hello guy!!', // Types 'One'
+                'hello guys!!', // Types 'One'
                 2000, // Waits 1s
                 'Front-End Developer portfolio', // Deletes 'One' and types 'Two'
                 5000, // Waits 2s
