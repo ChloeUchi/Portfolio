@@ -60,7 +60,7 @@ const Work = () => {
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{
                                 duration: 1.5,
-                                delay: index * 0.4,
+                                delay: index * 0.2,
                                 ease: "easeInOut"
                             }} key={index} className="card lg:w-[399.5px] lg:h-[230px] md:w-[350px] md:h-[200px] w-[271px] h-[154px] relative overflow-hidden rounded-lg transition-transform duration-600 hover:rotate-[-3deg]  hover:scale-105 shadow-lg"
                             style={{ backgroundImage: `url(${card.imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>

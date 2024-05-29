@@ -28,7 +28,9 @@ export default {
                 'homemade': ['homemade', 'serif'],
                 'darumadrop': ['darumadrop', 'sans-serif'],
                 'londrina': ['londrina', 'sans-serif'],
-                'titan': ['titan', 'sans-serif']
+                'titan': ['titan', 'sans-serif'],
+                'josefinita': ['josefinita', 'sans-serif'],
+                'josefin': ['josefinita', 'sans-serif'],
             },
             dropShadow: {
                 'custom': '1px 4px 3px rgba(100, 102, 292, 0.5)',
@@ -38,12 +40,12 @@ export default {
                 'customimgg': '-8px -8px 0px #DDDDDD',
                 'customimg22': '8px 8px 0px #DDDDDD',
                 'custom2': '1px 4px 3px #DDDDDD',
-                'customshadow': '3px 3px 2px #DDDDDD',
+                'customshadow': '3px 3px 2px #353535',
                 'custom3': '1px 3px 2px #6e723a',
 
             },
             backgroundImage: {
-                'custom-gradient': 'linear-gradient(90deg,rgba(214,139,219,0.9010197829131653) 31%, rgba(148,146,233,0.8085828081232493) 100%)',
+                'custom-gradient': 'linear-gradient(90deg,rgba(100, 102, 292, 0.5) 31%, rgba(200, 202, 292, 0.5) 100%)',
             },
         },
     },

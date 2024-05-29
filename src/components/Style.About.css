@@ -1,18 +1,17 @@
-body {
-  background-color: #5e628f;
-}
+
 
 .text-white {
     color: white;
 }
 
 .bg-custom-gradient {
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+    background: linear-gradient(135deg, #2e5570, #744a84);
 }
 
 .content {
     position: relative;
-    z-index: 2; /* Adjusted to ensure content is above the SVG background */
+    z-index: 2;
     color: white;
     text-align: center;
     padding: 2rem;
