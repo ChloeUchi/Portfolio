@@ -96,7 +96,7 @@ const About = () => {
                     className="parallax-item2 item-2 flex justify-around relative lg:hidden md:hidden"
                     style={{ transform: `translate(${offsetX * 1}px, ${offsetY * 1}px)` }}
                 >
-                    <img src={img3} alt="img" className="drop-shadow-customimg lg:w-[25em] md:w-[20em] w-[10em] absolute lg:-right-16 lg:-top-16 md:-right-32 md:-top-16 -right-9 -top-8 -rotate-45 hover:rotate-45 hover:drop-shadow-customimg2 hover:duration-300 animated-imageY" />
+                    <img src={img3} alt="img" className="drop-shadow-customimg lg:w-[25em] md:w-[20em] w-[10em] absolute lg:-right-16 lg:-top-16 md:-right-32 md:-top-16 -right-12 -top-8 -rotate-45 hover:rotate-45 hover:drop-shadow-customimg2 hover:duration-300 animated-imageY" />
                 </div>
                 <div className='text-about flex lg:gap-2 md:gap-2 gap-10 lg:flex-row md:flex-row flex-col-reverse m-auto items-center justify-center relative lg:top-24 md:top-16'>
                     <div className='lg:w-[80%] lg:px-10 md:w-[90%] w-[100%] flex m-auto'>
